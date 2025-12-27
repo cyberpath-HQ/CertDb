@@ -10,22 +10,22 @@ const date = new Date();
 const json_ld = makeJsonLd<WebPage>({
     "@type":          "WebPage",
     "@context":       "https://schema.org",
-    "@id":            "https://cyberpath-hq.com/contributors/",
-    url:              "https://cyberpath-hq.com/contributors/",
+    "@id":            "https://certdb.cyberpath-hq.com/contributors/",
+    url:              "https://certdb.cyberpath-hq.com/contributors/",
     name:             "CyberPath | Contributors",
     description:      "Contribute to CyberPath and help us build the most comprehensive database of cybersecurity certifications and trainings!",
     inLanguage:       "en-US",
     author:           "Emanuele (ebalo) Balsamo <emanuele.balsamo@cyberpath-hq.com>",
     image:            {
         "@type":     "ImageObject",
-        url:         "https://cyberpath-hq.com/CyberPath-og.webp",
+        url:         "https://certdb.cyberpath-hq.com/CyberPath-og.webp",
         width:       "1920",
         height:      "933",
         description: "CyberPath - Explore Cybersecurity Certifications",
     },
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id":   "https://cyberpath-hq.com/",
+        "@id":   "https://certdb.cyberpath-hq.com/",
     },
     datePublished:    `${ date.getFullYear() }-${ date.getMonth() + 1 }-${ date.getDate() }`,
     dateModified:     `${ date.getFullYear() }-${ date.getMonth() + 1 }-${ date.getDate() }`,
@@ -36,7 +36,7 @@ const json_ld = makeJsonLd<WebPage>({
     },
     potentialAction:  {
         "@type": "SearchAction",
-        target:  "https://cyberpath-hq.com/database/?query={search_term_string}",
+        target:  "https://certdb.cyberpath-hq.com/database/?query={search_term_string}",
     },
 });
 ---
@@ -44,16 +44,16 @@ const json_ld = makeJsonLd<WebPage>({
 <Layout JSON_LD={ json_ld }
         seo={ {
             title:              "CyberPath | Contributors",
-            canonical:          "https://cyberpath-hq.com/contributors/",
+            canonical:          "https://certdb.cyberpath-hq.com/contributors/",
             description:        "Contribute to CyberPath and help us build the most comprehensive database of cybersecurity certifications and trainings!",
             openGraph:          {
-                url:       "https://cyberpath-hq.com/contributors/",
+                url:       "https://certdb.cyberpath-hq.com/contributors/",
                 title:     "CyberPath | Contributors",
                 description: "Contribute to CyberPath and help us build the most comprehensive database of cybersecurity certifications and trainings!",
                 site_name: "CyberPath",
                 images:    [
                     {
-                        url:   "https://cyberpath-hq.com/CyberPath-og.webp",
+                        url:   "https://certdb.cyberpath-hq.com/CyberPath-og.webp",
                         width: 1920,
                         height: 933,
                         alt:   "CyberPath - Explore Cybersecurity Certifications",

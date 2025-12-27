@@ -44,22 +44,22 @@ const date = new Date();
 const json_ld = makeJsonLd<WebPage>({
     "@type":          "WebPage",
     "@context":       "https://schema.org",
-    "@id":            `https://cyberpath-hq.com/database/${ certification.id }`,
-    url:              `https://cyberpath-hq.com/database/${ certification.id }`,
+    "@id":            `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
+    url:              `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
     name:             `CyberPath | ${ certification.data.title }`,
     description:      `Learn more about the ${ certification.data.title } certification, including career paths, costs, and more.`,
     inLanguage:       "en-US",
     author:           "Emanuele (ebalo) Balsamo <emanuele.balsamo@cyberpath-hq.com>",
     image:            {
         "@type":     "ImageObject",
-        url:         "https://cyberpath-hq.com/CyberPath-og.webp",
+        url:         "https://certdb.cyberpath-hq.com/CyberPath-og.webp",
         width:       "1920",
         height:      "933",
         description: "CyberPath - Explore Cybersecurity Certifications",
     },
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id":   "https://cyberpath-hq.com/",
+        "@id":   "https://certdb.cyberpath-hq.com/",
     },
     datePublished:    `${ date.getFullYear() }-${ date.getMonth() + 1 }-${ date.getDate() }`,
     dateModified:     `${ date.getFullYear() }-${ date.getMonth() + 1 }-${ date.getDate() }`,
@@ -70,7 +70,7 @@ const json_ld = makeJsonLd<WebPage>({
     },
     potentialAction:  {
         "@type": "SearchAction",
-        target:  "https://cyberpath-hq.com/database/?query={search_term_string}",
+        target:  "https://certdb.cyberpath-hq.com/database/?query={search_term_string}",
     },
 });
 ---
@@ -79,15 +79,15 @@ const json_ld = makeJsonLd<WebPage>({
         seo={ {
             title:              `CyberPath | ${ certification.data.title }`,
             description:        `Learn more about the ${ certification.data.title } certification, including career paths, costs, and more.`,
-            canonical:          `https://cyberpath-hq.com/database/${ certification.id }`,
+            canonical:          `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
             openGraph:          {
-                url:         `https://cyberpath-hq.com/database/${ certification.id }`,
+                url:         `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
                 title:       `CyberPath | ${ certification.data.title }`,
                 description: `Learn more about the ${ certification.data.title } certification, including career paths, costs, and more.`,
                 site_name:   "CyberPath",
                 images:      [
                     {
-                        url:    "https://cyberpath-hq.com/CyberPath-og.webp",
+                        url:    "https://certdb.cyberpath-hq.com/CyberPath-og.webp",
                         width:  1920,
                         height: 933,
                         alt:    "CyberPath - Explore Cybersecurity Certifications",

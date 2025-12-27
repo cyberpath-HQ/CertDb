@@ -27,7 +27,7 @@ world of cybersecurity certification and training.
 ## Installation
 
 Although CyberPath is an OpenSource project and you can install it and run it locally, we recommend using the
-[official website](https://cyberpath-hq.com) for the best experience.
+[official website](https://certdb.cyberpath-hq.com) for the best experience.
 
 The website is updated automatically with every new release, and you can access the latest features and resources
 without the need to install anything.

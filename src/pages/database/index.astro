@@ -9,22 +9,22 @@ const date = new Date();
 const json_ld = makeJsonLd<WebPage>({
     "@type":          "WebPage",
     "@context":       "https://schema.org",
-    "@id":            "https://cyberpath-hq.com/database/",
-    url:              "https://cyberpath-hq.com/database/",
+    "@id":            "https://certdb.cyberpath-hq.com/database/",
+    url:              "https://certdb.cyberpath-hq.com/database/",
     name:             "CyberPath | Database",
     description:      "Access the full database of certifications and exams. Search, filter, and sort the data to find the information you need, remember, it's Free!",
     inLanguage:       "en-US",
     author:           "Emanuele (ebalo) Balsamo <emanuele.balsamo@cyberpath-hq.com>",
     image:            {
         "@type":     "ImageObject",
-        url:         "https://cyberpath-hq.com/CyberPath-og.webp",
+        url:         "https://certdb.cyberpath-hq.com/CyberPath-og.webp",
         width:       "1920",
         height:      "933",
         description: "CyberPath - Explore Cybersecurity Certifications",
     },
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id":   "https://cyberpath-hq.com/database/",
+        "@id":   "https://certdb.cyberpath-hq.com/database/",
     },
     datePublished:    `${ date.getFullYear() }-${ date.getMonth() + 1 }-${ date.getDate() }`,
     dateModified:     `${ date.getFullYear() }-${ date.getMonth() + 1 }-${ date.getDate() }`,
@@ -35,7 +35,7 @@ const json_ld = makeJsonLd<WebPage>({
     },
     potentialAction:  {
         "@type": "SearchAction",
-        target:  "https://cyberpath-hq.com/database/?query={search_term_string}&page={page_number}",
+        target:  "https://certdb.cyberpath-hq.com/database/?query={search_term_string}&page={page_number}",
     },
 });
 ---
@@ -43,16 +43,16 @@ const json_ld = makeJsonLd<WebPage>({
 <Layout JSON_LD={ json_ld }
         seo={ {
             title:              "CyberPath | Database",
-            canonical:          "https://cyberpath-hq.com/database/",
+            canonical:          "https://certdb.cyberpath-hq.com/database/",
             description:        "Access the full database of certifications and exams. Search, filter, and sort the data to find the information you need, remember, it's Free!",
             openGraph:          {
-                url:       "https://cyberpath-hq.com/database/",
+                url:       "https://certdb.cyberpath-hq.com/database/",
                 title:     "CyberPath | Database",
                 description: "Access the full database of certifications and exams. Search, filter, and sort the data to find the information you need, remember, it's Free!",
                 site_name: "CyberPath",
                 images:    [
                     {
-                        url:   "https://cyberpath-hq.com/CyberPath-og.webp",
+                        url:   "https://certdb.cyberpath-hq.com/CyberPath-og.webp",
                         width: 1920,
                         height: 933,
                         alt:   "CyberPath - Explore Cybersecurity Certifications",

@@ -31,7 +31,7 @@ follow these guidelines.
 
 ## Code of Conduct
 
-Please adhere to our [Code of Conduct](https://cyberpath-hq.com/code-of-conduct/) in all interactions within the
+Please adhere to our [Code of Conduct](https://certdb.cyberpath-hq.com/code-of-conduct/) in all interactions within the
 CyberPath community.
 
 ## Review Process
@@ -49,4 +49,4 @@ as much detail as possible to help us understand the problem or request.
 Thank you for considering contributing to CyberPath! Your efforts help us build a better resource for everyone in the
 cybersecurity community.
 
-For additional information refer to the [contributors page](https://cyberpath-hq.com/contributors/)
+For additional information refer to the [contributors page](https://certdb.cyberpath-hq.com/contributors/)
