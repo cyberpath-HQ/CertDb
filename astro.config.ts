@@ -13,6 +13,8 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
     site:         "https://certdb.cyberpath-hq.com",
+    base:          `/`,
+    trailingSlash: `ignore`,
     integrations: [
         tailwind({
             nesting: true,
