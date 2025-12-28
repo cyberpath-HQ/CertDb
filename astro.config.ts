@@ -24,14 +24,7 @@ export default defineConfig({
         }),
         spotlightjs(),
         react(),
-        sitemap({
-            filter: (page) => !(
-                page.includes("/database") || 
-                page.includes("/developers") || 
-                page.includes("/contributors") ||
-                page.includes("/career-paths")
-            )
-        }),
+        sitemap(),
         mdx({
             extendMarkdownConfig: true,
             gfm:                  true,
