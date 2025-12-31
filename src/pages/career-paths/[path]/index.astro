@@ -45,12 +45,14 @@ const {
           career_path,
       } = Astro.props;
 
+const canonical_url = `https://certdb.cyberpath-hq.com/career-paths/${ path.endsWith("/") ? path.slice(0, -1) : path }`;
+
 const date = new Date();
 const json_ld = makeJsonLd<WebPage>({
     "@type":          "WebPage",
     "@context":       "https://schema.org",
-    "@id":            `https://certdb.cyberpath-hq.com/career-paths/${ path }`,
-    url:              `https://certdb.cyberpath-hq.com/career-paths/${ path }`,
+    "@id":            canonical_url,
+    url:              canonical_url,
     name:             `CyberPath | ${ career_path }`,
     description:      `Explore the certification that make up the ${ career_path } career path. Find career paths, costs, and detailed info to advance your cybersecurity career.`,
     inLanguage:       "en-US",
@@ -83,10 +85,10 @@ const json_ld = makeJsonLd<WebPage>({
 <Layout JSON_LD={ json_ld }
         seo={ {
             title:              `CyberPath | ${ career_path }`,
-            canonical:          `https://certdb.cyberpath-hq.com/career-paths/${ path }`,
+            canonical:          canonical_url,
             description:        `Explore the certification that make up the ${ career_path } career path. Find career paths, costs, and detailed info to advance your cybersecurity career.`,
             openGraph:          {
-                url:         `https://certdb.cyberpath-hq.com/career-paths/${ path }`,
+                url:         canonical_url,
                 title:       `CyberPath | ${ career_path }`,
                 description: `Explore the certification that make up the ${ career_path } career path. Find career paths, costs, and detailed info to advance your cybersecurity career.`,
                 site_name:   "CyberPath",
