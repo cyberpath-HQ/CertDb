@@ -6,8 +6,6 @@ import sitemap from "@astrojs/sitemap";
 
 import tailwind from "@astrojs/tailwind";
 
-import sentry from "@sentry/astro";
-import spotlightjs from "@spotlightjs/astro";
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
@@ -19,10 +17,6 @@ export default defineConfig({
         tailwind({
             nesting: true,
         }),
-        sentry({
-            enabled: import.meta.env.DEV,
-        }),
-        spotlightjs(),
         react(),
         sitemap(),
         mdx({
@@ -33,4 +27,5 @@ export default defineConfig({
     build:        {
         assets: "assets",
     },
+    output:       "static",
 });

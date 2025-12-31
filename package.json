@@ -19,8 +19,6 @@
     "@fontsource-variable/nunito": "^5.2.5",
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
-    "@sentry/astro": "^8.55.0",
-    "@spotlightjs/astro": "^2.4.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "astro": "^5.8.0",
     "clsx": "^2.1.1",
