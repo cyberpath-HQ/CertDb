@@ -45,7 +45,7 @@ const {
           career_path,
       } = Astro.props;
 
-const canonical_url = `https://certdb.cyberpath-hq.com/career-paths/${ path.endsWith("/") ? path.slice(0, -1) : path }`;
+const canonical_url = `https://certdb.cyberpath-hq.com/career-paths/${ path.endsWith("/") ? path : path + "/" }`;
 
 const date = new Date();
 const json_ld = makeJsonLd<WebPage>({

@@ -44,8 +44,8 @@ const date = new Date();
 const json_ld = makeJsonLd<WebPage>({
     "@type":          "WebPage",
     "@context":       "https://schema.org",
-    "@id":            `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
-    url:              `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
+    "@id":            `https://certdb.cyberpath-hq.com/database/${ certification.id }/`,
+    url:              `https://certdb.cyberpath-hq.com/database/${ certification.id }/`,
     name:             `CyberPath | ${ certification.data.title }`,
     description:      `Learn more about the ${ certification.data.title } certification, including career paths, costs, and more.`,
     inLanguage:       "en-US",
@@ -79,9 +79,9 @@ const json_ld = makeJsonLd<WebPage>({
         seo={ {
             title:              `CyberPath | ${ certification.data.title }`,
             description:        `Learn more about the ${ certification.data.title } certification, including career paths, costs, and more.`,
-            canonical:          `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
+            canonical:          `https://certdb.cyberpath-hq.com/database/${ certification.id }/`,
             openGraph:          {
-                url:         `https://certdb.cyberpath-hq.com/database/${ certification.id }`,
+                url:         `https://certdb.cyberpath-hq.com/database/${ certification.id }/`,
                 title:       `CyberPath | ${ certification.data.title }`,
                 description: `Learn more about the ${ certification.data.title } certification, including career paths, costs, and more.`,
                 site_name:   "CyberPath",
